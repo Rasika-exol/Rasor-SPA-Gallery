@@ -24,8 +24,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -37,9 +38,6 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -81,6 +79,42 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.nav {
+  display: flex;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.search {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-container__image {
+  margin: 10px;
+}
+
+.image-container__image img {
+  object-fit: cover;
+  width: 300px;
+  height: 240px;
+}
+
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 @media (prefers-color-scheme: light) {

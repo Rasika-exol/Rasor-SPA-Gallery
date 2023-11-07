@@ -17,7 +17,7 @@ const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 //         <input class="search__input" type="text" />
 //       </search>
 //       <content class="image-container">
-       
+
 //       </content>
 //       <div class="menu-buttons">
 //         <button class="menu-buttons__button">Prev</button
@@ -57,8 +57,6 @@ const renderImages = (
 const main = async () => {
   const data = await fetchImage();
   renderImages(data);
-
-
 };
 
 main();
