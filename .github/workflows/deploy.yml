@@ -18,9 +18,10 @@ jobs:
         with:
           node-version: "20"
       - run: npm i
-      - env:
+      - name: Build it bob
+        env:
           VITE_ACCESS_KEY: ${{ secrets.VITE_ACCESS_KEY }}
-      - run: npm run build
+        run: npm run build
       - name: Deploy with gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
