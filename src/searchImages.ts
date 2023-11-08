@@ -1,4 +1,6 @@
-const searchImages = async (query = "dogs") => {
+const searchImages = async (query: string) => {
+  if (query === "") query = "dogs";
+
   const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 
   const response = await fetch(
