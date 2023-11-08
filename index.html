@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,28 @@
   </head>
   <body>
     <div id="app"></div>
+    <nav class="nav">
+      <div class="nav__logo">
+        <p>RASOR</p>
+      </div>
+      <div class="nav__link">
+        <a href="https://github.com/Rasika-exol/Rasor-SPA-Gallery">
+          SPA-GALLERY</a
+        >
+      </div>
+    </nav>
+    <main class="container">
+      <form class="search" id="searchForm">
+        <icon class="search__icon"></icon>
+        <input class="search__input" id="searchInput" type="text" />
+        <button type="submit">Search</button>
+      </form>
+      <content class="image-container"> </content>
+      <div class="menu-buttons">
+        <button class="menu-buttons__button">Prev</button
+        ><button class="menu-buttons__button">Next</button>
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
