@@ -4,8 +4,8 @@ const renderImages = (
 ) => {
   const template = data.map((source) => {
     return ` 
-    <div id=${source.id} class="image-container__image">
-    <img src=${source.urls.small} alt=${source.description}>
+    <div id="${source.id}" class="image-container__image">
+    <img src="${source.urls.small}" alt="${source.description}">
     </div>
     `;
   });

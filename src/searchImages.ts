@@ -12,7 +12,7 @@ const searchImages = async (query: string) => {
 
   const images = await response.json();
 
-  return images.results;
+  return images;
 };
 
 export default searchImages;
