@@ -18,4 +18,6 @@ jobs:
         with:
           node-version: "20"
       - run: npm i
+      - run: git config user.email "A"
+      - run: git config user.name "A"
       - run: npm run deploy
