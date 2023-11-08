@@ -24,5 +24,5 @@ jobs:
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          VITE_ACCESS_KEY: ${{ secrets.VITE_ACCESS_KEY }}
+          - GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          - VITE_ACCESS_KEY: ${{ secrets.VITE_ACCESS_KEY }}
