@@ -31,6 +31,4 @@ Step 1 and 2 have priority. Make sure that you finish these two. If you have tim
 
 ---
 
-TESING ??????
-
 Good luck and have fun!
