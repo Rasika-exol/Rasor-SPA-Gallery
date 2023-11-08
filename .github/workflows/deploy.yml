@@ -18,4 +18,4 @@ jobs:
         with:
           node-version: "20"
       - run: npm i
-      - run: npm deploy
+      - run: npm run deploy
